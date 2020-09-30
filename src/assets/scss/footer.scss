@@ -1,0 +1,68 @@
+.footer {
+  @mixin h-style {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #636363;
+  }
+  
+  padding: 63px 0px 49px;
+  border-top: 1px solid #c4c4c4;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__mode {
+  }
+
+  &__mode-title {
+    @include h-style;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &__leisure {
+  }
+
+  &__leisure-title {
+    @include h-style;
+  }
+
+  &__payment {
+  }
+
+  &__payment-title {
+    @include h-style;
+  }
+
+  &__methods {
+  }
+
+  &__methods-image {
+  }
+}
+.container {
+}
+.logo {
+
+  &__inner {
+  }
+
+  &__image {
+  }
+
+  &__phone {
+  }
+}

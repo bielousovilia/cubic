@@ -22,6 +22,11 @@ ol {
     padding: 0px;
 }
 
+ul,
+ol {
+    list-style-type: none;
+}
+
 .wrap {
     display: flex;
     flex-direction: column;
@@ -48,3 +53,4 @@ ol {
 @import 'header';
 @import 'choose';
 @import 'about';
+@import 'footer';
