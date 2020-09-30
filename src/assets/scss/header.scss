@@ -1,0 +1,141 @@
+.header {
+
+  &__container {
+    max-width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__about {
+    width: 100%;
+    padding: 42px 0px 0px 60px;
+    background: {
+      image: url('./../images/header__bg.png');
+      size: cover;
+    };
+    color: #fff;
+  }
+
+  &__how {
+    margin-bottom: 212px;
+  }
+
+  &__order-text {
+    font-size: 20px;
+    line-height: 45px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 77px;
+      display: block;
+      width: 296px;
+      border-bottom: 1px solid #fff;
+    }
+    // ! под вопросом такая стилизация
+  }
+
+  &__text {
+  }
+
+  &__main {
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-right: 77px;
+    font: {
+      weight: 700;
+      size: 40px;
+    };
+    line-height: 55px;
+  }
+
+  &__company {
+    font: {
+      family: 'Skranji', cursive;
+      weight: 700;
+      size: 50px;
+    };
+    line-height: 68px;
+  }
+
+  &__secondary {
+    display: flex;
+  }
+
+  &__sign {
+    margin-right: 88px;
+    font: {
+      weight: 700;
+      size: 20px;
+    };
+    line-height: 27px;
+  }
+
+  &__arrow {
+    margin-top: 7px;
+  }
+
+  &__transport {
+    // padding-left: 45px;
+    padding-right: 100px;
+  }
+
+  &__logo {
+    padding-left: 45px;
+  }
+
+  &__navigation {
+  }
+}
+.arrow {
+}
+.logo {
+  margin-bottom: 52px;
+
+  &__inner {
+  }
+
+  &__image {
+  }
+
+  &__phone {
+  }
+}
+.nav {
+  
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 70px;
+    } 
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 0px 12px 45px;
+    font: {
+      weight: 700;
+      size: 20px;
+    };
+    line-height: 27px;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      background-color: #9D20FF;
+      color: #fff;
+    }
+  }
+}
