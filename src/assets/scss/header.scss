@@ -1,5 +1,6 @@
 .header {
-
+  margin-bottom: 90px;
+  
   &__container {
     max-width: 100%;
   }
@@ -15,7 +16,8 @@
     background: {
       image: url('./../images/header__bg.png');
       size: cover;
-    };
+      repeat: no-repeat;
+  }
     color: #fff;
   }
 
