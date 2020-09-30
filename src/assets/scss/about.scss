@@ -1,0 +1,45 @@
+.about {
+  margin-bottom: 90px;
+
+  &__inner {
+  }
+
+  &__block {
+  }
+}
+.container {
+}
+.block {
+  display: flex;
+  align-items: center;
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font: {
+      weight: 700;
+      size: 40px;
+    }
+    line-height: 55px;
+  }
+
+  &__text {
+    margin-right: 58px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  &__text_reverse {
+    margin-top: 25px;
+    margin-left: 48px;
+  }
+
+  &__image {
+  }
+
+  &:last-child {
+    flex-direction: row-reverse;
+  }
+}
