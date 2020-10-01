@@ -59,6 +59,10 @@
     }
   }
 
+  &:nth-child(3) {
+    text-transform: uppercase;
+  }
+
   &:last-child {
     margin-bottom: 55px;
   }
