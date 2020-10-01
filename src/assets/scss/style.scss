@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
 
 html,
@@ -7,6 +7,7 @@ body {
 }
 
 body {
+    position: relative;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -17,7 +18,8 @@ h4,
 h5,
 h6,
 ul,
-ol {
+ol,
+p {
     margin: 0px;
     padding: 0px;
 }
@@ -54,3 +56,4 @@ ol {
 @import 'choose';
 @import 'about';
 @import 'footer';
+@import 'popups';

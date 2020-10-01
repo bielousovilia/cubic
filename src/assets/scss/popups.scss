@@ -1,0 +1,470 @@
+// ADRESS
+.popup {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+  }
+
+  &__inner {
+    position: fixed;
+    z-index: 3;
+    max-width: 1024px;
+    min-width: 720px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0px 54px 30px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px;
+  }
+
+  &__title {
+    max-width: 700px;
+    margin-bottom: 33px;
+    font: {
+      size: 40px;
+    }
+    line-height: 55px;
+  }
+
+  &__close {
+    position: absolute;
+    display: block;
+    width: 41px;
+    height: 41px;
+    right: 54px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 41px;
+      border: 1px solid #000;
+    }
+
+    &::before {
+      transform: rotate(-135deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__text {
+    max-width: 756px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  &__map {
+  }
+}
+.adress {
+}
+// END ADRESS
+
+// PHOTO
+.slider {
+
+  &__main {
+    position: relative;
+    margin-bottom: 27px;
+  }
+
+  &__dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 35px;
+  }
+
+  &__dots-item {
+    width: 21px;
+    height: 21px;
+    margin-right: 6px;
+    border: 1px solid #8F00FF;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  &__photos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+
+  &__item {
+    margin-right: 28px;
+  }
+
+  &__photo {
+    max-width: 100%;
+  }
+}
+
+.active-dot {
+  background-color: #8F00FF;
+}
+// END PHOTO
+
+// FAQ
+.popup {
+
+  &__inner {
+  }
+
+  &__head {
+  }
+
+  .faq &__title {
+    margin-bottom: 70px;
+  }
+
+  &__close {
+  }
+
+  &__inner-box {
+    max-height: 615px;
+    overflow: auto;
+  }
+
+  &__box {
+    padding: 15px;
+  }
+}
+.faq {
+}
+.box {
+  margin-bottom: 45px;
+
+  &__title {
+    padding-left: 20px;
+    margin-bottom: 14px;
+    font: {
+      weight: 700;
+      size: 30px;
+    }
+    line-height: 41px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  &:last-child {
+    margin-bottom: 59px;
+  }
+}
+// END FAQ
+
+// PRICE FRAME6
+.popup {
+
+  .price &__inner {
+    width: 100%;
+  }
+
+  .price &__head {
+    align-items: center;
+  }
+
+  .price &__title {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+
+  &__close {
+  }
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__content-inner {
+    margin-right: 109px;
+  }
+
+  &__choice {
+  }
+
+  &__choice-inner {
+    display: flex;
+  }
+
+  &__radio {
+    margin-right: 20px;
+  }
+
+  #radio_1,
+  #radio_2,
+  #radio_3,
+  #radio_11,
+  #radio_22,
+  #radio_33 {
+    appearance: none;
+    position: absolute; 
+  }
+
+  #radio_1:checked + .popup__radio_style:after,
+  #radio_2:checked + .popup__radio_style:after,
+  #radio_3:checked + .popup__radio_style:after,
+  #radio_11:checked + .popup__radio_style:after,
+  #radio_22:checked + .popup__radio_style:after,
+  #radio_33:checked + .popup__radio_style:after {
+    background-color: #8F00FF;
+  }
+
+  &__radio_style {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: block;
+    cursor: pointer;
+    
+    border-radius: 50%;
+    box-shadow: 1px 3px 7px rgba(64, 64, 64, 0.13);
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+    }
+  }
+
+  &__choice-quantity {
+  }
+
+  &__choice-price {
+  }
+
+  &__choose {
+  }
+
+  &__choice-text {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &__choice-link {
+    color: #255CFF;
+  }
+
+  &__choose-content {
+  }
+
+  &__choice-sign {
+    margin-bottom: 25px;
+    font: {
+      weight: 200;
+      size: 17px;
+    }
+    line-height: 23px;
+  }
+
+  &__choice-btns {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__choice-table {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+
+  &__choice-time {
+    width: 50px;
+    margin-right: 15px;
+    padding: 7px 20px;
+    border: 1px solid #8F00FF;
+    border-radius: 12px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(87.58deg, #BA62FF 0%, #750FC5 100%);
+      color: #fff;
+    }
+  }
+
+  &__choose-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 28px 0px;
+    border: 1px solid #8F00FF;
+    border-radius: 12px;
+    font-size: 17px;
+    line-height: 23px;
+
+    &:hover {
+      background: linear-gradient(87.58deg, #BA62FF 0%, #750FC5 100%);
+      color: #fff;
+    }
+    
+    &:hover button {
+      color: #fff;
+    }
+
+    &:hover .popup__checkbox_style {
+      border-color: #fff;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__choose-checkbox {
+    appearance: none;
+    position: absolute;
+    margin-left: 20px;
+  }
+
+  &__checkbox_style {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 1px solid #000;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      // !доделать стилизацию checkbox
+    }
+  }
+
+  &__choose-inside {
+  }
+
+  &__choose-group {
+
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  &__choose-num {
+  }
+
+  &__choose-price {
+    margin-right: 34px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    min-height: 366px;
+    padding: 0px 15px;
+    border-radius: 12px;
+    background: linear-gradient(87.58deg, #BA62FF 0%, #750FC5 100%);
+    text-align: center;
+    color: #fff;
+  }
+
+  &__price-title {
+    margin: 24px 0px 16px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &__price-price {
+    display: block;
+    margin-bottom: 51px;
+    font: {
+      size: 40px;
+      weight: 700;
+    }
+    line-height: 55px;
+  }
+
+  &__price-btn {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 15px 0px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 23px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &__price-sms {
+    padding: 18px 0px 23px;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__choice-day {
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  &__choice-hours {
+    display: flex;
+  }
+
+  &__choice_style {
+    width: 160px;
+  }
+
+  &__choose-style {
+    margin-right: 200px;
+  }
+}
+
+.popup__active {
+  display: flex;
+  flex-direction: column;
+}
+// END PRICE FRAME6
